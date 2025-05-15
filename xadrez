@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    // Definição das casas a serem movidas para o Cavalo
+    const int movimentosBaixo = 2;
+    const int movimentosEsquerda = 1;
+
+    // Exemplo de saídas para outras peças
+    printf("Cima\n");
+    printf("Baixo\n");
+    printf("Esquerda\n");
+    printf("Direita\n");
+
+    // Linha em branco antes do movimento do Cavalo
+    printf("\n");
+
+    // Movimento do Cavalo usando loops aninhados
+    // Loop externo para movimento vertical (Baixo)
+    for (int i = 0; i < movimentosBaixo; i++) {
+        printf("Baixo\n");
+    }
+
+    // Loop interno para movimento horizontal (Esquerda)
+    int contador = 0;
+    while (contador < movimentosEsquerda) {
+        printf("Esquerda\n");
+        contador++;
+    }
+
+    return 0;
+}
